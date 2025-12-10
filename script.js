@@ -29,3 +29,10 @@ window.addEventListener("load", function () {
 	loader.style.opacity = "0";
 	setTimeout(() => (loader.style.display = "none"), 500);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+	const yearSpan = document.getElementById("year");
+	if (yearSpan) {
+		yearSpan.textContent = new Date().getFullYear();
+	}
+});
